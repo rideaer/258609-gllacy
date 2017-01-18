@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Педченко](https://up.htmlacademy.ru/htmlcss/16/user/258609).
-* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/htmlcss/16/user/124940).
+* Наставник: [Анастасия Мусаэльян (Вт, Чт с 19 до 22) ](https://up.htmlacademy.ru/htmlcss/16/user/124940).
 
 ---
 
