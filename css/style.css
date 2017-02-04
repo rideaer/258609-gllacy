@@ -1,6 +1,49 @@
 body{
 	background: #849d8f;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 1;
+	color: white;
 	margin: 0;
 	padding: 0;
+}
+
+.main-header .main-navigation a{
+	font-size: 16px;
+}
+
+.main-header .user-block,
+.main-header .info{
+	font-size: 14px;
+}
+
+.main-header .info .phone{
+	font-size: 22px;
+}
+
+.banners p {
+	font-size: 18px;
+}
+
+.banners .banner-title {
+	font-size: 35px;
+}
+
+.btn{
+	font-size: 18px;
+}
+
+.btn-lg{
+	font-size: 32px;
+}
+
+.slider .slider-heading{
+	font-size: 60px;
+}
+
+.about-us .about-us-tittle{
+	font-size: 24px;
+}
+
+.about-us .about-us-description{
+	line-height: 0.5;
 }
