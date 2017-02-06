@@ -1,4 +1,4 @@
-body{
+body {
 	background: #849d8f;
 	font-size: 16px;
 	line-height: 1;
@@ -7,16 +7,16 @@ body{
 	padding: 0;
 }
 
-.main-header .main-navigation a{
+.main-header .main-navigation a {
 	font-size: 16px;
 }
 
 .main-header .user-block,
-.main-header .info{
+.main-header .info {
 	font-size: 14px;
 }
 
-.main-header .info .phone{
+.main-header .info .phone {
 	font-size: 22px;
 }
 
@@ -32,18 +32,214 @@ body{
 	font-size: 18px;
 }
 
-.btn-lg{
+.btn-lg {
 	font-size: 32px;
 }
 
-.slider .slider-heading{
+.slider .slider-heading {
 	font-size: 60px;
 }
 
-.about-us .about-us-tittle{
+.about-us .about-us-tittle {
 	font-size: 24px;
 }
 
-.about-us .about-us-description{
-	line-height: 0.5;
+.about-us .about-us-description {
+	line-height: 1;
+}
+
+
+/*----------------header----------------*/
+.main-navigation {
+	width: 560px;
+	float: left;
+	margin-right: 267px;
+}
+
+.user-block {
+	width: 267px;
+	float: right;
+}
+
+.breadcrumbs {
+	width: 267px;
+	float: left;
+}
+
+.info {
+	width: 267px;
+	float: right;
+}
+
+.goods {
+	display: none;
+}
+
+/*----------------main----------------*/
+
+/*section slider*/
+
+.slider {
+	margin-bottom: 40px;
+}
+
+/*section banners*/
+
+.banners .banner {
+	width: 560px;
+	margin-bottom: 40px;
+}
+
+.banners .banner-raspberry {
+	float: left;
+}
+
+.banners .banner-chocolate {
+	float: right;
+}
+
+/*section bestseller*/
+
+.bestseller {
+	margin-bottom: 40px;
+}
+
+.bestseller .item {
+	width: 267px;
+	margin-right: 26px;
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.bestseller .item-tittle {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.bestseller .item:nth-child(4n){
+	margin-right: 0;
+}
+
+.bestseller .btn {
+	display: none;
+}
+
+.pagination {
+	width: 200px;
+	float: right;
+}
+
+/*section about-us*/
+
+.about-us {
+	margin-bottom: 40px;
+}
+
+.about-us .column-left {
+	width: 560px;
+	float: left;
+}
+
+.about-us .column-right {
+	width: 560px;
+	float: right;
+}
+
+/*section last-news*/
+
+.last-news {
+	margin-bottom: 40px;
+}
+
+.last-news .news {
+	width: 560px;
+	float: left;
+}
+
+.last-news .subscription {
+	width: 560px;
+	float: right;
+}
+
+/*section map*/
+
+.map .contact-us {
+	width: 302px;
+	float: right;
+}
+
+/*section filters*/
+
+.filters {
+	width: 1000px;
+	float: left;
+}
+
+.filters .filter-sorting {
+	width: 200px;
+	float: left;
+	margin-left: 10px;
+}
+
+.filters .filter-price {
+	width: 230px;
+	float: left;
+	margin-left: 10px;
+}
+
+.filters .filter-fatness {
+	width: 430px;
+	float: left;
+}
+
+.filters .filter-extender {
+	width: 710px;
+	float: left;
+	margin-right: 10px;
+}
+
+.filter-btn {
+	float: left;
+}
+
+/*----------------footer----------------*/
+.main-footer .social-btns {
+	width: 267px;
+	float: left;
+	margin-right: 26px;
+}
+
+.main-footer .navbar {
+	width: 560px;
+	float: left;
+}
+
+.main-footer .copyright {
+	width: 267px;
+	float: right;
+}
+
+
+/*----------------other----------------*/
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 27px;
+}
+
+.btn {
+	display: inline-block;
+}
+
+.popup {
+	display: none;
 }
