@@ -56,9 +56,34 @@ body {
 	margin-right: 267px;
 }
 
+.main-navigation .logo {
+	display: inline-block;
+	float: left;
+}
+
+.main-navigation ul li {
+	display: inline-block;
+}
+
+.main-navigation .sub-menu {
+	display: none;
+}
+
 .user-block {
 	width: 267px;
 	float: right;
+}
+
+.user-block ul li {
+	display: inline-block;
+}
+
+.search .search-form {
+	display: none;
+}
+
+.entrance .login-form {
+	display: none;
 }
 
 .breadcrumbs {
@@ -66,9 +91,17 @@ body {
 	float: left;
 }
 
+.breadcrumbs li {
+	display: inline-block;
+}
+
 .info {
-	width: 267px;
+	width: 200px;
 	float: right;
+}
+
+.info .phone {
+	display: block;
 }
 
 .goods {
@@ -96,6 +129,16 @@ body {
 
 .banners .banner-chocolate {
 	float: right;
+}
+
+/*section filters*/
+
+.filter-fatness .filter-radio {
+	display: inline-block;
+}
+
+.filter-extender .filter-checkbox {
+	display: inline-block;
 }
 
 /*section bestseller*/
@@ -130,6 +173,10 @@ body {
 .pagination {
 	width: 200px;
 	float: right;
+}
+
+.pagination li {
+	display: inline-block;
 }
 
 /*section about-us*/
@@ -215,12 +262,23 @@ body {
 .main-footer .navbar {
 	width: 560px;
 	float: left;
+	margin:0 auto;
 }
 
 .main-footer .copyright {
 	width: 267px;
 	float: right;
 }
+
+.navbar .navbar-left {
+	margin-left: 100px;
+	float: left;
+}
+
+.navbar .navbar-right{
+	float: left;
+}
+
 
 
 /*----------------other----------------*/
@@ -234,6 +292,7 @@ body {
 .container {
 	width: 1200px;
 	padding: 0 27px;
+	margin:0 auto;
 }
 
 .btn {
