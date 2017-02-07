@@ -63,6 +63,12 @@ body {
 
 .main-navigation ul li {
 	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.main-navigation ul li a{
+	vertical-align: top;
 }
 
 .main-navigation .sub-menu {
@@ -74,8 +80,14 @@ body {
 	float: right;
 }
 
-.user-block ul li {
+.user-block li {
 	display: inline-block;
+	font-size: 0;
+}
+
+.user-block li a {
+	font-size: 16px;
+	vertical-align: top;
 }
 
 .search .search-form {
@@ -84,15 +96,6 @@ body {
 
 .entrance .login-form {
 	display: none;
-}
-
-.breadcrumbs {
-	width: 267px;
-	float: left;
-}
-
-.breadcrumbs li {
-	display: inline-block;
 }
 
 .info {
@@ -104,6 +107,24 @@ body {
 	display: block;
 }
 
+.breadcrumbs {
+	width: 267px;
+	float: left;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	font-size: 0;
+
+}
+
+.breadcrumbs li a,
+.breadcrumbs > .active {
+	font-size: 14px;
+	vertical-align: bottom;
+}
+
+
 .goods {
 	display: none;
 }
@@ -111,7 +132,6 @@ body {
 /*----------------main----------------*/
 
 /*section slider*/
-
 .slider {
 	margin-bottom: 40px;
 }
@@ -177,6 +197,12 @@ body {
 
 .pagination li {
 	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.pagination li a{
+	font-size: 16px;
 }
 
 /*section about-us*/
@@ -283,10 +309,10 @@ body {
 
 /*----------------other----------------*/
 .clearfix::after {
-  content: "";
+	content: "";
 
-  display: table;
-  clear: both;
+	display: table;
+	clear: both;
 }
 
 .container {
