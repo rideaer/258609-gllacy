@@ -100,8 +100,7 @@ body {
 }
 
 .info {
-	width: 200px;
-	float: right;
+	text-align: right;
 }
 
 .info .phone {
@@ -119,8 +118,7 @@ body {
 
 .breadcrumbs {
 	width: 267px;
-	float: left;
-	margin-right: 879px;
+
 	font-size: 0;
 }
 
