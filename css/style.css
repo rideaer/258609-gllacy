@@ -3,8 +3,6 @@ body {
 	font-size: 16px;
 	line-height: 1;
 	color: white;
-	margin: 0;
-	padding: 0;
 }
 
 .main-header .main-navigation a {
@@ -107,9 +105,19 @@ body {
 	display: block;
 }
 
+
+.goods {
+	display: none;
+}
+
+/*----------------main----------------*/
+
+/*section breadcrumbs*/
+
 .breadcrumbs {
 	width: 267px;
 	float: left;
+	margin-right: 879px;
 }
 
 .breadcrumbs li {
@@ -124,12 +132,6 @@ body {
 	vertical-align: bottom;
 }
 
-
-.goods {
-	display: none;
-}
-
-/*----------------main----------------*/
 
 /*section slider*/
 .slider {
