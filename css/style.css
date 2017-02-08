@@ -9,7 +9,6 @@ body {
 	font-size: 16px;
 }
 
-.main-header .user-block,
 .main-header .info {
 	font-size: 14px;
 }
@@ -55,17 +54,20 @@ body {
 }
 
 .main-navigation .logo {
-	display: inline-block;
 	float: left;
 }
 
-.main-navigation ul li {
-	display: inline-block;
+.main-navigation .main-menu {
 	font-size: 0;
-	vertical-align: top;
+	float: left;
 }
 
-.main-navigation ul li a{
+.main-menu li {
+	display: inline-block;
+}
+
+.main-menu li a{
+	display: inline-block;
 	vertical-align: top;
 }
 
@@ -76,14 +78,15 @@ body {
 .user-block {
 	width: 267px;
 	float: right;
+	font-size: 0;
 }
 
 .user-block li {
 	display: inline-block;
-	font-size: 0;
 }
 
 .user-block li a {
+	display: inline-block;
 	font-size: 16px;
 	vertical-align: top;
 }
@@ -118,18 +121,17 @@ body {
 	width: 267px;
 	float: left;
 	margin-right: 879px;
+	font-size: 0;
 }
 
 .breadcrumbs li {
 	display: inline-block;
-	font-size: 0;
-
 }
 
 .breadcrumbs li a,
 .breadcrumbs > .active {
-	font-size: 14px;
-	vertical-align: bottom;
+	vertical-align: top;
+	font-size: 14px;	
 }
 
 
@@ -154,13 +156,24 @@ body {
 }
 
 /*section filters*/
+.filter-fatness {
+	font-size: 0;
+}
 
 .filter-fatness .filter-radio {
 	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.filter-extender {
+	font-size: 0;
 }
 
 .filter-extender .filter-checkbox {
 	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
 }
 
 /*section bestseller*/
@@ -195,15 +208,16 @@ body {
 .pagination {
 	width: 200px;
 	float: right;
+	font-size: 0;
 }
 
 .pagination li {
 	display: inline-block;
-	font-size: 0;
-	vertical-align: top;
 }
 
-.pagination li a{
+.pagination li a {
+	display: inline-block;
+	vertical-align: top;
 	font-size: 16px;
 }
 
