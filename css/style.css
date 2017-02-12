@@ -3,20 +3,14 @@ body {
 	font-size: 16px;
 	line-height: 1;
 	color: white;
+	font-family: "Roboto", "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-.main-header .main-navigation a {
-	font-size: 16px;
+a {
+	text-decoration: none;
 }
-
-.main-header .info {
-	font-size: 14px;
-}
-
-.main-header .info .phone {
-	font-size: 22px;
-}
-
 .banners p {
 	font-size: 18px;
 }
@@ -47,64 +41,198 @@ body {
 
 
 /*----------------header----------------*/
+.main-header {
+	padding-top: 9px;
+}
+
 .main-navigation {
-	width: 560px;
 	float: left;
-	margin-right: 267px;
 }
 
 .main-navigation .logo {
 	float: left;
+	margin-right: 5px;
 }
 
 .main-navigation .main-menu {
 	font-size: 0;
 	float: left;
+	padding: 0;
+	position: relative;
 }
 
-.main-menu li {
-	display: inline-block;
-}
-
-.main-menu li a{
+.main-menu > li {
 	display: inline-block;
 	vertical-align: top;
+	padding: 10px 13px;
+	margin-top: 14px;
+	border-radius: 32px;
 }
 
-.main-navigation .sub-menu {
+.main-menu > li:hover {
+	background: #f7f6f3;
+}
+
+.main-menu > li:hover a{
+	color: #323232;
+	border: rgba(0,0,0,0);
+}
+
+.main-menu > li:first-child {
+	margin-left: 7px;
+}
+
+.main-menu > li > a {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	font-weight: 500;
+}
+
+.sub-menu {
 	display: none;
+	position: absolute;
+	left: 0;
+	top: 54px;
+	width: 144px;
+	height: 170px;
+	background: #f7f6f3;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 8px;
+}
+
+.sub-menu .sub-menu-tittle {
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 13px;
+	padding-left: 21px;
+	margin: 0;
+	color: #323232;
+	color: #323232;
+	font-size: 14px;
+	position: relative;
+}
+
+.sub-menu li:first-child::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: auto;
+	background: rgba(53,53,53,0.2);
+	position: absolute;
+	top: 40px;
+	left: 6px;
+	right: 6px;
+}
+
+.sub-menu li a {
+	display: block;
+	color: #323232;
+	font-size: 14px;
+	padding-left: 21px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin: 3px 0;
+}
+
+.sub-menu li a:hover {
+	background: #fbded7;
+}
+
+.sub-menu li a:active {
+	background: #f6b5a5;
+}
+
+.main-menu > li:hover .sub-menu {
+	display: block;
 }
 
 .user-block {
-	width: 267px;
 	float: right;
 	font-size: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 14px;
+	list-style-type: none;
+	vertical-align: top;
 }
 
 .user-block li {
 	display: inline-block;
-}
-
-.user-block li a {
-	display: inline-block;
-	font-size: 16px;
 	vertical-align: top;
 }
 
+.search {
+	position: relative;
+}
+.search a {
+	border-radius: 32px;
+	width: 32px;
+	height: 32px;
+	background:rgba(255,255,255,0.2) url(../img/icons/loupe.png) no-repeat 50% 50%;
+	display: block;
+}
+
+.search a:hover {
+	background: #f8f7f4 url(../img/icons/loupe-hover.png) no-repeat 50% 50%;
+}
+
+.search:hover .search-form{
+	display: block;
+}
+
+
 .search .search-form {
 	display: none;
+	position: absolute;
+	right: 0;
+	top: 36px;	
+	background: #f8f7f4;
+	border-radius: 9px;
+}
+
+.search-form input{
+	font-size: 14px;
+	width: 295px;
+	height: 45px;
+	margin: 20px 15px;
+	border-radius: 9px;
+	border: 1px solid #d3d3d2;
+	padding-left: 15px;
+}
+
+.search-form input:focus{
+	outline: none;
+	border: 1px solid #323232;
+}
+
+.user-block .entrance {
+	font-size: 14px;
 }
 
 .entrance .login-form {
 	display: none;
 }
 
+/*верста формы входа*/
+
 .info {
 	text-align: right;
+	color: white;
+	font-size: 14px;
 }
 
 .info .phone {
-	display: block;
+	display: inline-block;
+	font-size: 22px;
+	text-decoration: none;
+	line-height: 1.5;
+	color: white;
+	font-weight: 500;
 }
 
 
@@ -118,7 +246,6 @@ body {
 
 .breadcrumbs {
 	width: 267px;
-
 	font-size: 0;
 }
 
@@ -138,6 +265,11 @@ body {
 	margin-bottom: 40px;
 }
 
+.slider-item {
+	width: 700px;
+	text-align: center;
+	margin: 0 auto;
+}
 /*section banners*/
 
 .banners .banner {
@@ -330,7 +462,7 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 1146px;
 	padding: 0 27px;
 	margin:0 auto;
 }
