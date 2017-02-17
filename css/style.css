@@ -122,6 +122,9 @@ a {
 	margin: 0;
 	border-radius: 8px;
 	z-index: 1;
+	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
 
@@ -230,6 +233,9 @@ a.sub-menu-active:hover {
 	background: #f8f7f4;
 	border-radius: 9px;
 	z-index: 1;
+	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
 .search-form input{
@@ -302,6 +308,9 @@ a.sub-menu-active:hover {
 	right: 0;
 	top: 37px;
 	z-index: 1;
+	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
 .login-form input {
@@ -422,6 +431,9 @@ a.sub-menu-active:hover {
 	font-size: 13px;
 	z-index: 1;
 	border-radius: 15px;
+	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
 .goods-item {
@@ -725,7 +737,6 @@ a.sub-menu-active:hover {
 
 .filters {
   width: 980px;
-  margin-bottom: -10px;
 }
 
 .filter-top {
@@ -1026,20 +1037,23 @@ a.sub-menu-active:hover {
 .bestseller {
 	margin-bottom: 40px;
 	position: relative;
+	font-size: 0;
 }
 
 .bestseller .item {
-	height: 316px;
+	min-height: 316px;
 	/*margin-top: 34px;*/
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 267px;
 	margin-right: 13px;
 	margin-left: 13px;
 	padding-top: 6px;
-	float: left;
-	font-size: 18px;
+	/*float: left;*/
+	/*font-size: 18px;*/
 	text-align: center;
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .item-case {
@@ -1087,27 +1101,21 @@ a.sub-menu-active:hover {
 }
 
 .bestseller .item:hover {
-	/*display: none;*/
-	width: 267px;
-	height: 405px;
+/*	width: 267px;
+	height: 405px;*/
 	background: rgba(255,255,255,0.3);
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 13px;
 	padding-right: 13px;
-	z-index: 1;
-	margin-bottom: -89px;
+	padding-bottom: 20px;
+	z-index: 10;
+	margin-bottom: -100px;
 	position: relative;
-	border-radius: 15px;
-}
-
-.bestseller .item:hover .btn{
-	display: inline-block;
-	margin-top: 11px;
-	font-size: 18px;
-	line-height: 24px;
-	padding: 14px 16px;
-	border-radius: 32px;
+	border-radius: 10px;
+	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
+	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
 .bestseller .item:nth-child(4n+1):hover{
@@ -1118,11 +1126,23 @@ a.sub-menu-active:hover {
 	margin-right: -13px;
 }
 
+.bestseller .item:hover .btn{
+	display: inline-block;
+	margin-top: 11px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 14px 16px;
+	border-radius: 32px;
+	z-index: 10;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .bestseller .item-tittle {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-	text-align: center;
 	margin-left: 3px;
 	margin-right: 3px;
 }
@@ -1346,7 +1366,6 @@ a.sub-menu-active:hover {
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 	padding-left: 14px;
-	margin-right: 10px;
 }
 
 .subscription-form input:focus{
@@ -1359,6 +1378,7 @@ a.sub-menu-active:hover {
 	line-height: 24px;
 	padding: 8px 18px;
 	border-radius: 32px;
+	float: right;
 }
 
 .subscription-form .btn:active {
