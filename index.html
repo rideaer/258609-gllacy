@@ -38,14 +38,24 @@
 						<li class="search">
 							<a href="#">Поиск</a>
 							<form class="search-form" action="#" method="post">
-								<input type="text" name="search" value="" placeholder="Что ищем?">
+								<label>
+									<input type="text" name="search" value="" placeholder="Что ищем?">
+									<span class="input-tittle">Что ищем?</span>
+								</label>
 							</form>
 						</li>
 						<li class="entrance">
 							<a href="#">Вход</a>
 							<form class="login-form" action="#" method="post">
-								<input type="text" name="email" value="" placeholder="Электронная почта">
-								<input type="tel" name="phone" value="" placeholder="Телефон">
+
+								<label>
+									<input type="email" name="email" value="" placeholder="Электронная почта">
+									<span class="input-tittle">Электронная почта</span>
+								</label>
+								<label>
+									<input type="tel" name="phone" value="" placeholder="Телефон">
+									<span class="input-tittle">Телефон</span>
+								</label>
 								<button class="btn" type="submit">Войти</button>
 								<div class="login-action">
 									<a href="#">Забыли пароль?</a>
@@ -151,7 +161,10 @@
 						<div class="subscription-content">
 							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 							<form class="subscription-form" action="#" method="post">
-								<input type="text" name="email" value="" placeholder="Электронная почта">
+								<label>
+									<input type="text" name="email" value="" placeholder="Электронная почта">
+									<span class="input-tittle">Электронная почта</span>
+								</label>
 								<button class="btn" type="submit">Отправить</button>
 							</form>
 						</div>
@@ -163,7 +176,7 @@
 					<div class="contact-us">
 						<p>Адрес главного офиса и офлайн магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>					
 						<p>Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-						<a href="#" class="btn">Форма обратной связи</a>
+						<a href="#" class="btn form-feedback">Форма обратной связи</a>
 					</div>
 				</div>
 			</section>
@@ -191,14 +204,27 @@
 		</footer>
 	</div>
 	<!-- форма обратной связи -->
-	<div class="popup">
-		<form action="#" class="callbeck" method="post">
-			<div class="b-text">Мы обязательно вам ответим! <button type="submit" class="cancel">Закрыть</button></div>
-			<label><input class="callbeck-info" name="name" type="text" placeholder="Как вас зовут?"></label>
-			<label><input class="callbeck-info" name="email" type="text" placeholder="Ваша почта для ответа?"></label>
-			<label><textarea class="callbeck-text" name="comment" placeholder="Ваша почта для ответа?"></textarea></label>
-			<button type="submit" class="btn">Отправить</button>
-		</form>
+	<div class="popup-wrapper">
+		<div class="popup">
+			<form  action="#" class="feedback" method="post">
+				<div class="feedback-tittle">Мы обязательно вам ответим!</div>
+				<button type="submit" class="feedback-cancel">Закрыть</button>
+				<label>
+					<input class="feedback-info" name="name" type="text" placeholder="Как вас зовут?">
+					<span class="input-tittle">Как вас зовут?</span>
+				</label>
+				<label>
+					<input class="feedback-info" name="email" type="text" placeholder="Ваша почта для ответа?">
+					<span class="input-tittle">Ваша почта для ответа?</span>
+				</label>
+				<label>
+					<textarea class="feedback-textarea" name="comment" placeholder="Напишите что-нибудь..." rows="6"></textarea>
+					<span class="input-tittle">Напишите что-нибудь...</span>
+				</label>
+				<button type="submit" class="btn">Отправить</button>
+			</form>
+		</div>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
