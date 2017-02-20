@@ -286,11 +286,11 @@ a.sub-menu-active:hover {
 .entrance > a {
 	color: #ffffff;
 	display: inline-block;
+	vertical-align: top;
 	padding: 8px 16px;
 	padding-left: 44px;
 	font-size: 14px;
 	line-height: 16px;
-	vertical-align: top;
 	position: relative;
 	border-radius: 32px;
 	background: rgba(255,255,255,0.2);
@@ -299,6 +299,7 @@ a.sub-menu-active:hover {
 .entrance > a::before {
 	content: "";
 	display: inline-block;
+	vertical-align: top;
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -338,6 +339,7 @@ a.sub-menu-active:hover {
 
 .login-form input {
 	display: inline-block;
+	vertical-align: top;
 	width: auto;
 	height: 44px;
 	font-size: 14px;
@@ -346,7 +348,6 @@ a.sub-menu-active:hover {
 	border: 1px solid #d3d3d2;
 	padding: 0 54px 0 14px;
 	margin-bottom: 20px;
-	vertical-align: top;
 }
 
 .login-form .btn {
@@ -444,6 +445,7 @@ a.sub-menu-active:hover {
 .basket-of-goods > a::before {
 	content: "";
 	display: inline-block;
+	vertical-align: top;
 	width: 21px;
 	height: 20px;
 	position: absolute;	
@@ -537,7 +539,7 @@ a.sub-menu-active:hover {
 
 .goods-item a {
 	display: inline-block;
-
+	vertical-align: top;
 }
 
 .goods-weight span {
@@ -581,6 +583,7 @@ a.sub-menu-active:hover {
 
 .info .phone {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 22px;
 	line-height: 24px;
 	text-decoration: none;
@@ -645,7 +648,7 @@ a.sub-menu-active:hover {
 
 /*section slider*/
 
-input[name="toggle"] {
+.slider-radio-controls {
 	display: none;
 }
 
@@ -671,11 +674,11 @@ input[name="toggle"] {
 
 .slide-btn {
 	display: inline-block;
+	vertical-align: top;
 	padding: 12px 40px;
 	font-weight: 600;
 	font-size: 31px;
 	line-height: 41px;
-	vertical-align: top;
 	color: #ffffff;
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -711,10 +714,10 @@ input[name="toggle"] {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: top;
 	width: 17px;
 	height: 17px;
 	margin-right: 8px;
-	vertical-align: top;
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
@@ -1025,7 +1028,7 @@ label[for="btn-3"]:hover {
   margin-top: 0;
   margin-left: 3px;
   padding-right: 0;
-  padding-left: 21px;
+  padding-left: 18px;
   line-height: 18px;
   list-style: none;
 }
@@ -1207,6 +1210,7 @@ label[for="btn-3"]:hover {
 
 .item:hover .btn {
 	display: inline-block;
+	vertical-align: top;
 	margin-top: 11px;
 	font-size: 18px;
 	line-height: 24px;
@@ -1240,6 +1244,7 @@ label[for="btn-3"]:hover {
 	width: 61px;
 	height: 61px;
 	display: inline-block;
+	vertical-align: top;
 	background: url(../img/icecream-hit.png);
 	left: 0;
 	top: 0;
@@ -1312,6 +1317,7 @@ label[for="btn-3"]:hover {
 .icon-delivery::before {
 	content: "";
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;	
 	top: 0;
 	left: 0;
@@ -1386,7 +1392,7 @@ label[for="btn-3"]:hover {
     border-radius: 15px;
     padding-top: 22px;
     padding-left: 20px;
-    padding-bottom: 85px;
+    padding-bottom: 82px;
     padding-right: 240px;
     color: #323232;
     font-size: 16px;
@@ -1395,7 +1401,7 @@ label[for="btn-3"]:hover {
 }
 
 .news p {
-	margin: 0;
+	margin: 0 0 5px 0;
 }
 
 .news a {
@@ -1422,7 +1428,7 @@ label[for="btn-3"]:hover {
 .subscription-content {
 	background: #f8f7f4;
 	border-radius: 15px;
-	padding: 29px 20px 35px 22px;
+	padding: 29px 20px 34px 22px;
 	margin: 5px;
 }
 
@@ -1431,7 +1437,7 @@ label[for="btn-3"]:hover {
 	font-size: 16px;
 	line-height: 22px;
 	margin: 0;
-	margin-bottom: 35px;
+	margin-bottom: 37px;
 }
 
 .subscription-form {
@@ -1545,9 +1551,13 @@ label[for="btn-3"]:hover {
 	line-height: 22px;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	padding-left: 26px;
+	text-align: center;
 	border-radius: 32px;
-	margin-top: 28px;
+	margin-top: 24px;
+}
+
+b.contact-us-phone {
+	margin-top: 6px;
 }
 
 main {
@@ -1686,6 +1696,7 @@ main {
 .copyright::after {
 	content: "";
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 	background: url(../img/htmlacademy-logo.png);
 	top: 0;
@@ -1721,6 +1732,7 @@ main {
 .btn {
 	border: none;
 	display: inline-block;
+	vertical-align: top;
 	color: #fefefe;
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -1786,8 +1798,8 @@ main {
 
 .feedback .feedback-cancel {
 	display: inline-block;
-	float: right;
 	vertical-align: top;
+	float: right;
 	font-size: 0;
 	background: url(../img/icons/feedback-cancel.png);
 	border: none;
@@ -1816,6 +1828,7 @@ main {
 .feedback .feedback-info ,
 .feedback .feedback-textarea {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 24px;
 	border-radius: 10px;
