@@ -1540,9 +1540,12 @@ label[for="btn-3"]:hover {
 }
 
 .contact-us .btn {
+	display: block;
 	font-size: 18px;
 	line-height: 22px;
-	padding: 12px 28px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 26px;
 	border-radius: 32px;
 	margin-top: 28px;
 }
