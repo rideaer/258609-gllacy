@@ -15,6 +15,7 @@ a {
 .site-wrapper {
 	background-repeat: no-repeat;
 	background-position: top center;
+	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -77,8 +78,6 @@ a {
 }
 
 .main-menu-item:active > a {
-	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,1);
-	-moz-box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,1);
 	box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,1);
 }
 
@@ -107,8 +106,6 @@ a {
 	margin: 0;
 	border-radius: 8px;
 	z-index: 1;
-	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
-	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	padding-bottom: 5px;
 }
@@ -216,8 +213,6 @@ a.sub-menu-active:hover {
 	background: #f8f7f4;
 	border-radius: 9px;
 	z-index: 1;
-	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
-	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
@@ -269,10 +264,6 @@ a.sub-menu-active:hover {
 }
 
 .search-form input:focus::-moz-placeholder {
-	color: transparent;
-}
-
-.search-form input:focus:-moz-placeholder {
 	color: transparent;
 }
 
@@ -336,8 +327,6 @@ a.sub-menu-active:hover {
 	right: 0;
 	top: 37px;
 	z-index: 1;
-	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
-	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
@@ -407,10 +396,6 @@ a.sub-menu-active:hover {
 }
 
 .login-form input:focus::-moz-placeholder {
-	color: transparent;
-}
-
-.login-form input:focus:-moz-placeholder {
 	color: transparent;
 }
 
@@ -495,8 +480,6 @@ a.sub-menu-active:hover {
 	font-size: 13px;
 	z-index: 1;
 	border-radius: 15px;
-	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
-	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
@@ -535,8 +518,6 @@ a.sub-menu-active:hover {
 }
 
 .goods-cancel .cancel:active {
-	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
 }
 
@@ -691,7 +672,6 @@ a.sub-menu-active:hover {
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
-	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-radius: 100px;
@@ -699,14 +679,12 @@ a.sub-menu-active:hover {
 }
 
 .slide-btn:hover {
-	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active {
-	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -949,7 +927,8 @@ label[for="btn-3"]:hover {
 }
 
 .range-slider:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .creamy ,
@@ -1201,8 +1180,6 @@ label[for="btn-3"]:hover {
 	margin-bottom: -100px;
 	position: relative;
 	border-radius: 10px;
-	-webkit-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
-	-moz-box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 	box-shadow: -1px 10px 20px 0px rgba(0,0,0,0.64);
 }
 
@@ -1508,10 +1485,6 @@ label[for="btn-3"]:hover {
 	color: transparent;
 }
 
-.subscription-form input:focus:-moz-placeholder {
-	color: transparent;
-}
-
 .subscription-form input:focus::placeholder {
 	color: transparent;
 }
@@ -1628,8 +1601,6 @@ main {
 .social-btn-inst:active ,
 .social-btn-fb:active ,
 .social-btn-vk:active {
-	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(136,136,136,1);
-	-moz-box-shadow: inset 0px 1px 2px 0px rgba(136,136,136,1);
 	box-shadow: inset 0px 1px 2px 0px rgba(136,136,136,1);
 	opacity: 0.8;
 }
@@ -1744,21 +1715,18 @@ main {
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
-	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .btn:hover {
-	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active {
-	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -1786,7 +1754,8 @@ main {
 
 .popup-show {
 	display: block;
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.6s;
+	        animation: bounce 0.6s;
 }
 
 .feedback {
@@ -1817,18 +1786,12 @@ main {
 }
 
 .feedback .feedback-cancel:hover {
-	-moz-transform: rotate(15deg); /* Для Firefox */
-	-ms-transform: rotate(15deg); /* Для IE */
-	-webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
-	-o-transform: rotate(15deg); /* Для Opera */
+	-webkit-transform: rotate(15deg);
 	transform: rotate(15deg);
 }
 
 .feedback .feedback-cancel:active {
-	-moz-transform: rotate(0deg); /* Для Firefox */
-	-ms-transform: rotate(0deg); /* Для IE */
-	-webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
-	-o-transform: rotate(0deg); /* Для Opera */
+	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
 
@@ -1894,6 +1857,18 @@ main {
 	left: 10px;
 }
 
+.feedback textarea[name="comment"]:focus::-webkit-input-placeholder {
+	visibility: hidden;
+}
+
+.feedback textarea[name="comment"]:focus::-moz-placeholder {
+	visibility: hidden;
+}
+
+.feedback textarea[name="comment"]:focus:-ms-input-placeholder {
+	visibility: hidden;
+}
+
 .feedback textarea[name="comment"]:focus::placeholder {
 	visibility: hidden;
 }
@@ -1910,7 +1885,15 @@ main {
 	color: transparent;
 }
 
-.feedback textarea:focus:-moz-placeholder {
+.feedback textarea::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.feedback textarea::-moz-placeholder {
+	color: transparent;
+}
+
+.feedback textarea:-ms-input-placeholder {
 	color: transparent;
 }
 
@@ -1930,10 +1913,6 @@ main {
 	color: transparent;
 }
 
-.feedback input:focus:-moz-placeholder {
-	color: transparent;
-}
-
 .feedback input:focus::placeholder {
 	color: transparent;
 }
@@ -1950,45 +1929,38 @@ main {
 
 @-webkit-keyframes bounce {
 	0% {
+		-webkit-transform: translateY(-2000px);
 		transform: translateY(-2000px);
 	}
 	70% {
+		-webkit-transform: translateY(30px);
 		transform: translateY(30px);
 	}
 	90% {
+		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
 	100% {
-		transform: translateY(0);
-	}
-}
-
-@-moz-keyframes bounce {
-	0% {
-		transform: translateY(-2000px);
-	}
-	70% {
-		transform: translateY(30px);
-	}
-	90% {
-		transform: translateY(-10px);
-	}
-	100% {
+		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
 
 @keyframes bounce {
 	0% {
+		-webkit-transform: translateY(-2000px);
 		transform: translateY(-2000px);
 	}
 	70% {
+		-webkit-transform: translateY(30px);
 		transform: translateY(30px);
 	}
 	90% {
+		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
 	100% {
+		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
